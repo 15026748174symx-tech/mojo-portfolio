@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MOJO — 空间设计师</title>
+  <meta name="description" content="MOJO · 沈杨毛周 — 环境/空间设计师，作品集">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600&family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 自定义光标 -->
+  <div class="custom-cursor" id="cursor"></div>
+
+  <!-- 悬浮导航 — 滚动后出现 -->
+  <nav class="float-nav" id="float-nav">
+    <a href="#hero" class="float-dot active" data-section="hero"></a>
+    <a href="#about" class="float-dot" data-section="about"></a>
+    <a href="#projects" class="float-dot" data-section="projects"></a>
+    <a href="#resume" class="float-dot" data-section="resume"></a>
+    <a href="#contact" class="float-dot" data-section="contact"></a>
+  </nav>
+
+  <!-- ==================== HERO ==================== -->
+  <section id="hero" class="hero">
+    <div id="vanta-bg"></div>
+    <div class="hero-content">
+      <p class="hero-tagline">做点设计，过点生活</p>
+      <h1 class="hero-name">MOJO</h1>
+      <p class="hero-sub">沈杨毛周 · 空间设计师 · AI玩家 · 吉他新手</p>
+      <nav class="hero-nav">
+        <a href="#about" class="nav-link">关于</a>
+        <span class="nav-divider">/</span>
+        <a href="#projects" class="nav-link">作品</a>
+        <span class="nav-divider">/</span>
+        <a href="#resume" class="nav-link">简历</a>
+        <span class="nav-divider">/</span>
+        <a href="#contact" class="nav-link">联系</a>
+      </nav>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT ==================== -->
+  <section id="about" class="about">
+    <div class="section-label">ABOUT</div>
+
+    <!-- 个人名片 -->
+    <div class="namecard">
+      <div class="namecard-top">
+        <div class="namecard-left">
+          <div class="namecard-photo">
+            <div class="photo-placeholder">📷</div>
+          </div>
+          <div class="namecard-info">
+            <h2 class="namecard-name">沈杨毛周</h2>
+            <p class="namecard-aka">MOJO</p>
+            <div class="namecard-divider"></div>
+            <p class="namecard-title">空间设计师</p>
+            <p class="namecard-location">中国 · 上海</p>
+            <div class="namecard-contact">
+              <a href="mailto:2411353985@qq.com">2411353985@qq.com</a>
+              <span>+86 150 2674 8174</span>
+            </div>
+          </div>
+        </div>
+        <div class="namecard-right">
+          <div class="namecard-daily">
+            <h3 class="daily-heading">近日生活</h3>
+            <ul class="daily-list">
+              <li>🎣 周末又去河边蹲了半天，空军</li>
+              <li>🎸 在练《斑马斑马》的前奏</li>
+              <li>🤖 折腾 AI 做效果图，越来越顺手</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="namecard-text">
+        <p>本科学环境设计，毕业之后在景观公司画过图、在建筑设计院用 AI 训过模型、也在文旅公司把党建展厅从方案跟到落地。做得杂，但也做得深——从 CAD 到 SD，从效果图到施工现场，都能上手。</p>
+        <p>工作之外，钓鱼、弹吉他、打台球、到处走走。相信好的空间不用解释，人走进去自然就懂了。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PROJECTS - Bento Grid ==================== -->
+  <section id="projects" class="projects">
+    <div class="section-label">SELECTED WORKS</div>
+    <div class="bento-grid">
+
+      <!-- 项目 1 - featured, large -->
+      <article class="bento-card card-featured" data-project="1">
+        <div class="card-bg"></div>
+        <div class="card-glass"></div>
+        <div class="card-overlay">
+          <span class="card-num-big">01</span>
+          <div class="card-info">
+            <h3 class="card-title">苏河 · 水澜庭驿</h3>
+            <p class="card-desc">普陀区苏州河丹巴路码头驿站设计</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- 项目 2 -->
+      <article class="bento-card card-medium" data-project="2">
+        <div class="card-bg"></div>
+        <div class="card-glass"></div>
+        <div class="card-overlay">
+          <span class="card-num-big">02</span>
+          <div class="card-info">
+            <h3 class="card-title">千年禾兴 · 锦绣华服</h3>
+            <p class="card-desc">嘉兴汉服博物馆布展设计</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- 项目 3 -->
+      <article class="bento-card card-small" data-project="3">
+        <div class="card-bg"></div>
+        <div class="card-glass"></div>
+        <div class="card-overlay">
+          <span class="card-num-big">03</span>
+          <div class="card-info">
+            <h3 class="card-title">川行</h3>
+            <p class="card-desc">上川路街道景观改造设计</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- 项目 4 -->
+      <article class="bento-card card-small" data-project="4">
+        <div class="card-bg"></div>
+        <div class="card-glass"></div>
+        <div class="card-overlay">
+          <span class="card-num-big">04</span>
+          <div class="card-info">
+            <h3 class="card-title">沐居</h3>
+            <p class="card-desc">多子化背景下的住宅设计</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- 项目 5 -->
+      <article class="bento-card card-medium" data-project="5">
+        <div class="card-bg"></div>
+        <div class="card-glass"></div>
+        <div class="card-overlay">
+          <span class="card-num-big">05</span>
+          <div class="card-info">
+            <h3 class="card-title">其他实践</h3>
+            <p class="card-desc">项目实践 · AI 设计 · 展板设计</p>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ==================== RESUME ==================== -->
+  <section id="resume" class="resume">
+    <div class="section-label">RESUME</div>
+
+    <!-- 经历时间轴 -->
+    <div class="quest-axis">
+
+      <!-- 设计师 → 右侧 -->
+      <div class="axis-row row-right">
+        <div class="axis-card">
+          <span class="tl-period">2024.07 — 2025.03</span>
+          <h4 class="tl-role">上海和煦文旅有限公司</h4>
+          <p class="tl-company">设计师</p>
+          <ul class="tl-details">
+            <li>负责党建展厅、展台方案设计与深化</li>
+            <li>空间布局规划、效果图制作、方案文本输出</li>
+            <li>对接甲方需求，全流程设计落地</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 实习 → 左侧 -->
+      <div class="axis-row row-left">
+        <div class="axis-card">
+          <span class="tl-period">2023.10 — 2024.04</span>
+          <h4 class="tl-role">华东建筑设计研究院有限公司</h4>
+          <p class="tl-company">实习</p>
+          <ul class="tl-details">
+            <li>参与超高层建筑项目数据处理</li>
+            <li>AI 模型训练，Stable Diffusion 等工具应用</li>
+            <li>提升 AI 与建筑设计结合的实操能力</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 设计助理 → 右侧 -->
+      <div class="axis-row row-right">
+        <div class="axis-card">
+          <span class="tl-period">2023.06 — 2023.10</span>
+          <h4 class="tl-role">上海中陵景观设计有限公司</h4>
+          <p class="tl-company">设计助理</p>
+          <ul class="tl-details">
+            <li>协助景观方案构思、效果图制作</li>
+            <li>施工图绘制、项目资料整理</li>
+            <li>现场踏勘、方案文本排版</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- 技能总览 -->
+    <h3 class="resume-heading">职业技能</h3>
+    <div class="skills-overview">
+      <div class="skill-group">
+        <h4 class="skill-cat">设计建模</h4>
+        <div class="skills">
+          <span class="skill-tag">AutoCAD</span>
+          <span class="skill-tag">SketchUp</span>
+          <span class="skill-tag">Photoshop</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h4 class="skill-cat">渲染表现</h4>
+        <div class="skills">
+          <span class="skill-tag">Lumion</span>
+          <span class="skill-tag">Enscape</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h4 class="skill-cat">AI 设计</h4>
+        <div class="skills">
+          <span class="skill-tag">Stable Diffusion</span>
+          <span class="skill-tag">Lovart</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h4 class="skill-cat">其他</h4>
+        <div class="skills">
+          <span class="skill-tag">施工图绘制</span>
+          <span class="skill-tag">方案文本</span>
+          <span class="skill-tag">AI 模型训练</span>
+          <span class="skill-tag">现场踏勘</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 荣誉奖项 -->
+    <div class="awards-section">
+      <h3 class="resume-heading">荣誉奖项</h3>
+      <div class="awards-grid">
+        <div class="award"><span class="award-level">全球级</span> BIAF 国际艺术节 2024 全球总决赛 银奖</div>
+        <div class="award"><span class="award-level">国家级</span> 第九届米兰设计周 三等奖</div>
+        <div class="award"><span class="award-level">国家级</span> 第五届东方创意之星 全国赛区 铜奖</div>
+        <div class="award"><span class="award-level">省级</span> 第五届东方创意之星 上海赛区 特金奖</div>
+        <div class="award"><span class="award-level">省级</span> "ECADI 杯" 大学生建筑设计技能竞赛 佳作奖</div>
+        <div class="award"><span class="award-level">省级</span> 第七届米兰设计周 三等奖</div>
+        <div class="award"><span class="award-level">校级</span> 谢希德奖学金 ×3 · 优秀毕业生</div>
+        <div class="award award-more">+ 15+ 项竞赛获奖</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT ==================== -->
+  <footer id="contact" class="contact">
+    <div class="section-label">CONTACT</div>
+    <p class="contact-email"><a href="mailto:2411353985@qq.com">2411353985@qq.com</a></p>
+    <p class="contact-phone">+86 150 2674 8174</p>
+    <p class="contact-location">中国 · 上海</p>
+    <p class="contact-credit">© 2025 MOJO</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
+  <script src="vanta.topology.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
