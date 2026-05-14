@@ -6,6 +6,13 @@
 let vantaEffect = null;
 
 function initVanta() {
+  // 手机端跳过 Vanta（省电 + 流畅）
+  if (window.innerWidth < 768) {
+    console.log('[Vanta] Skipped on mobile');
+    document.getElementById('vanta-bg').style.display = 'none';
+    return;
+  }
+
   console.log('[Vanta] Checking availability...');
   console.log('[Vanta] p5 available:', typeof p5 !== 'undefined');
   console.log('[Vanta] VANTA available:', typeof VANTA !== 'undefined');
